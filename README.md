@@ -9,7 +9,7 @@ MySQL/MariaDB, PHP) using Terraform with the **Docker provider**.
 
 ## 🗺️ Architecture Diagram
 
-`<img width="1036" height="663" alt="image" src="https://github.com/user-attachments/assets/531a03a7-ba98-4716-9f62-e465176e911f" />`{=html}
+<img width="1036" height="663" alt="image" src="https://github.com/user-attachments/assets/531a03a7-ba98-4716-9f62-e465176e911f" />
 
 ------------------------------------------------------------------------
 
