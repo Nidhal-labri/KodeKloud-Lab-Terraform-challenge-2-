@@ -1,9 +1,7 @@
 # 🚀 KodeKloud Lab -- Terraform Challenge 2
 
-This repository contains the solution for **KodeKloud Terraform
-Challenge 2**.\
-In this challenge, we deploy a **LAMP stack** (Linux, Apache,
-MySQL/MariaDB, PHP) using Terraform with the **Docker provider**.
+This repository contains the solution for **KodeKloud Terraform Challenge 2**.
+In this challenge, we deploy a **LAMP stack** (Linux, Apache, MySQL/MariaDB, PHP) using Terraform with the **Docker provider**.
 
 ------------------------------------------------------------------------
 
@@ -40,8 +38,7 @@ unzip -d /usr/local/bin /tmp/terraform_1.1.5_linux_amd64.zip
 ### ✅ Step 2 -- Configure Docker Provider
 
 The Docker provider is already configured using **kreuzwerker/docker**.\
-Documentation: [Terraform Docker
-Provider](https://registry.terraform.io/providers/kreuzwerker/docker/latest).
+Documentation: [Terraform Docker Provider](https://registry.terraform.io/providers/kreuzwerker/docker/latest).
 
 Check the existing provider configuration:
 
@@ -55,15 +52,10 @@ Initialize the provider:
 ``` bash
 terraform init
 ```
-
 ------------------------------------------------------------------------
-
 ### ✅ Step 3 -- Create Terraform Resources
 
-Use `vi` or any text editor to create the following files under:\
-`/root/code/terraform-challenges/challenge2`
-
-------------------------------------------------------------------------
+Use `vi` or any text editor to create the following files under: `/root/code/terraform-challenges/challenge2`
 
 #### 1️⃣ php-httpd-image.tf
 
@@ -80,8 +72,6 @@ resource "docker_image" "php-httpd-image" {
 }
 ```
 
-------------------------------------------------------------------------
-
 #### 2️⃣ mariadb-custom-image.tf
 
 ``` hcl
@@ -97,8 +87,6 @@ resource "docker_image" "mariadb-image" {
 }
 ```
 
-------------------------------------------------------------------------
-
 #### 3️⃣ mariadb_volume.tf
 
 ``` hcl
@@ -106,8 +94,6 @@ resource "docker_volume" "mariadb_volume" {
   name = "mariadb-volume"
 }
 ```
-
-------------------------------------------------------------------------
 
 #### 4️⃣ private_network.tf
 
@@ -121,8 +107,6 @@ resource "docker_network" "private_network" {
   }
 }
 ```
-
-------------------------------------------------------------------------
 
 #### 5️⃣ db.tf
 
@@ -159,8 +143,6 @@ resource "docker_container" "mariadb" {
 }
 ```
 
-------------------------------------------------------------------------
-
 #### 6️⃣ php-httpd.tf
 
 ``` hcl
@@ -190,8 +172,6 @@ resource "docker_container" "php-httpd" {
   }
 }
 ```
-
-------------------------------------------------------------------------
 
 #### 7️⃣ db_dashboard.tf
 
@@ -245,7 +225,7 @@ Verify deployment:
 
 <img width="1919" height="818" alt="image" src="https://github.com/user-attachments/assets/23b81632-0707-4d58-8125-d6d17bd01e78" />
 
-🎉 Congratulations -- You have successfully deployed a **LAMP stack with Terraform and Docker**!
+**🎉 Congratulations -- We have successfully completed Terraform Challenge 2 !**
 
 ------------------------------------------------------------------------
 
