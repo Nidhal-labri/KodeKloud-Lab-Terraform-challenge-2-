@@ -239,12 +239,13 @@ terraform apply
 
 Verify deployment:
 
--   Access `php-httpd` on port `80`.\
--   Access `phpMyAdmin` on port `8081`.\
--   Or use the lab's **check button**.
+-   Access `php-httpd` on port `80`.\ and `phpMyAdmin` on port `8081`.\
+-   Or simply use the lab's **check button**.
 
-🎉 Congratulations -- You have successfully deployed a **LAMP stack with
-Terraform and Docker**!
+
+<img width="1919" height="818" alt="image" src="https://github.com/user-attachments/assets/23b81632-0707-4d58-8125-d6d17bd01e78" />
+
+🎉 Congratulations -- You have successfully deployed a **LAMP stack with Terraform and Docker**!
 
 ------------------------------------------------------------------------
 
